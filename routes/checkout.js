@@ -24,6 +24,7 @@ router.get('/client_token', (req,res) => {
 });
 
 router.post('/', function(req, res, next) {
+  
   // Use the payment method nonce here
   var nonceFromTheClient = req.body.paymentMethodNonce;
   // Create a new transaction for $10
